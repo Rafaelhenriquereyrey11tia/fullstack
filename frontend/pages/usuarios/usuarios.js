@@ -2,7 +2,7 @@ const main = document.querySelector("main")
 
 
 async function searcpeople (){
-   const persons= await fetch("http://localhost:3333").then(response => response.json())
+   const persons= await fetch("https://backend-eight-phi-99.vercel.app/").then(response => response.json())
   persons.map(persons=>{
     main.innerHTML += ` 
     <section>
